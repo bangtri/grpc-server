@@ -1,0 +1,9 @@
+server:
+  port: 6636
+
+spring:
+  application:
+    name: GRPC-Application
+grpc:
+  server:
+    port: 8864
