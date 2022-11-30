@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: GRPC-Application
+    name: GRPC-Server
 grpc:
   server:
     port: 8864
