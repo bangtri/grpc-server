@@ -1,9 +1,22 @@
 server:
-  port: 6636
+  port: 6080
 
 spring:
   application:
     name: GRPC-Server
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboot
+    username: springboot
+    password: springboot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  jackson:
+    time-zone: Asia/Ho_Chi_Minh
+    date-format: dd-MM-yyyy HH:mm:ss
+
 grpc:
   server:
-    port: 8864
+    port: 8090
